@@ -1,0 +1,99 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins font */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+h1 {
+    font-style: normal;
+    font-size: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-style:regular;
+    color: white !important;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    transform: translateY(50px);
+    animation: pop-up 1s forwards;
+    animation-delay: 0.5s;
+    opacity:0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Example font for paragraphs */
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    color:white;
+    transform: translateY(50px);
+    animation: pop-up 1s forwards;
+    animation-delay: 0.5s;
+    opacity:0;
+}
+
+/* Home container */
+.home-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+/* Background video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+/* Container for the main content */
+.container {
+    text-align: center;
+    padding: 60px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+}
+
+
+
+/* Pop-up animation */
+@keyframes pop-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button styling with black background and white text */
+button {
+    background-color: black !important;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: white !important;
+    color:black;
+    transform: scale(1.2);
+}

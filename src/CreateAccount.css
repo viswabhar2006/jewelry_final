@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top */
+    min-height: 100vh; /* Use min-height to ensure it grows with content */
+    width: 100vw;
+    background: url('back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px; /* Adds space around the content */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+.login-box h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    word-wrap: break-word; /* Ensures long text doesn't overflow */
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ddd;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars if unnecessary */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('back.jpg') no-repeat center center fixed !important; /* Background image */
+    background-size: cover;
+}
+
+.login-box {
+    margin-top: 100px !important;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Text color set to black */
+    text-align: center;
+    background: none; /* Remove background color */
+}
+
+.login-box h1 {
+    font-size: 50px !important;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    color: white;
+    margin:0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Add space for the icon */
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white; /* Make input background transparent */
+    color: black; /* Input text color set to black */
+  }
+  
+
+.input-group input::placeholder {
+    color: black; /* Placeholder text color set to black */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%; /* Align to the middle */
+    transform: translateY(-50%); /* Center vertically */
+    cursor: pointer;
+    color: black; /* Set icon color to black */
+    font-size: 1.2rem; /* Adjust size as needed */
+  }
+  
+
+.button-container {
+    margin-top: 1rem;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: black;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.links a{
+    font-size: 17px !important;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.fa-eye, .fa-eye-slash {
+    font-weight: 900;
+    color: black;
+    margin-top: 36px;
+}

@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.main-nav button:hover,
+.main-nav button.active {
+  color: #ffd700;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.user-profile span {
+  font-size: 14px;
+}
+
+.user-profile button {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.mySlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideImages img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 5px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+  border: 1px solid black;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Upload Section */
+.upload-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container {
+  text-align: center;
+}
+
+.upload-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #34495e;
+}
+
+/* Image Preview */
+.image-preview-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.image-preview-box {
+  flex: 1;
+  max-width: 45%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.placeholder-text {
+  color: #888;
+  font-style: italic;
+}
+
+/* Content Boxes */
+.content-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.content-boxes .box {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 25%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-boxes .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content-boxes .box h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.content-boxes .box p {
+  color: #34495e;
+}
